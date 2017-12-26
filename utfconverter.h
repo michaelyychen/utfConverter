@@ -55,7 +55,6 @@ bool convert(const int input_fd, const int output_fd,const int optV, const int f
  * @return Returns true if the write was a success, else false.
  */
 bool safe_write(int output_fd, void *value, size_t size,int format,bool form);
-//bool safe_write_surrogate_pair(int output_fd, void *value, void *value2,size_t size, int format);
 bool BOM_write(int output_fd,int format);
 int BOM_Check(int input_fd);
 bool endianCheck();
@@ -67,7 +66,6 @@ void printmacro();
 void printTableBELE(int optV, int value,int format,int value2,bool identical);
 void printTable16(int optV,int codePT, int value,int value2,int value3,int value4,int count,int inputFormat);
 int calCodePt(int count,unsigned char bytes[]);
-
 void printFooter(int optV);
 int reverse(int i);
 /**
